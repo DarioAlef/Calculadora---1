@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1.Calculadora</title>
+    <style>
+        .square {
+            width: 700px;
+            height: 900px;
+            background-color: rgb(28, 39, 39);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 30px;
+        }
+
+
+        .butão01 {
+            position: absolute;
+            top: 87%;
+            left: 64%;
+            transform: translate(-50%, -50%);
+            padding: 10px 30px;
+            font-size: 78px;
+            background-color: #ffffff;
+            color: #dc0000;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão02 {
+            position: absolute;
+            top: 73%;
+            left: 36%;
+            transform: translate(-50%, -50%);
+            padding: 10px 25px;
+            font-size: 80px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão03 {
+            position: absolute;
+            top: 73%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            padding: 10px 25px;
+            font-size: 80px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão04 {
+            position: absolute;
+            top: 73%;
+            left: 48%;
+            transform: translate(-50%, -50%);
+            padding: 10px 25px;
+            font-size: 80px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão05 {
+            position: absolute;
+            top: 59%;
+            left: 36%;
+            transform: translate(-50%, -50%);
+            padding: 10px 25px;
+            font-size: 80px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão06 {
+            position: absolute;
+            top: 59%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            padding: 10px 25px;
+            font-size: 80px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão07 {
+            position: absolute;
+            top: 59%;
+            left: 48%;
+            transform: translate(-50%, -50%);
+            padding: 10px 25px;
+            font-size: 80px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão08 {
+            position: absolute;
+            top: 45%;
+            left: 36%;
+            transform: translate(-50%, -50%);
+            padding: 10px 25px;
+            font-size: 80px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão09 {
+            position: absolute;
+            top: 45%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            padding: 10px 25px;
+            font-size: 80px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão10 {
+            position: absolute;
+            top: 45%;
+            left: 48%;
+            transform: translate(-50%, -50%);
+            padding: 10px 25px;
+            font-size: 80px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão11 {
+            position: absolute;
+            top: 87%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            padding: 10px 25px;
+            font-size: 80px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão12 {
+            position: absolute;
+            top: 87%;
+            left: 48%;
+            transform: translate(-50%, -50%);
+            padding: 10px 34px;
+            font-size: 80px;
+            background-color: #ffffff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão13 {
+            position: absolute;
+            top: 87%;
+            left: 56%;
+            transform: translate(-50%, -50%);
+            padding: 10px 25px;
+            font-size: 80px;
+            background-color: #ffffff;/ color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão14 {
+            position: absolute;
+            top: 73%;
+            left: 56%;
+            transform: translate(-50%, -50%);
+            padding: 10px 35px;
+            font-size: 80px;
+            background-color: #ffffff;/ color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão15 {
+            position: absolute;
+            top: 59%;
+            left: 56%;
+            transform: translate(-50%, -50%);
+            padding: 10px 28px;
+            font-size: 75px;
+            background-color: #ffffff;/ color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão16 {
+            position: absolute;
+            top: 45%;
+            left: 56%;
+            transform: translate(-50%, -50%);
+            padding: 10px 30px;
+            font-size: 80px;
+            background-color: #ffffff;/ color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão17 {
+            position: absolute;
+            top: 59%;
+            left: 64%;
+            transform: translate(-50%, -50%);
+            padding: 6px 30px;
+            font-size: 80px;
+            background-color: #ffffff;/ color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .butão18 {
+            position: absolute;
+            top: 73%;
+            left: 64%;
+            transform: translate(-50%, -50%);
+            padding: 7px 40px;
+            font-size: 80px;
+            background-color: #ffffff;/ color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 9px;
+            cursor: pointer;
+
+        }
+
+        .butão19 {
+            position: absolute;
+            top: 45%;
+            left: 64%;
+            transform: translate(-50%, -50%);
+            padding: 20px 20px;
+            font-size: 50px;
+            background-color: #ffffff;/ color: #4CAF50;
+            border: 2px solid #ff0000;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+    </style>
+
+<body>
+    <div class="square"></div>
+
+    <button class="butão01" id="b1" onclick="clicar">=</button>
+    <div> = </div>
+    <button class="butão02">1</button>
+    <button class="butão03">2</button>
+    <button class="butão04">3</button>
+    <button class="butão05">4</button>
+    <button class="butão06">5</button>
+    <button class="butão07">6</button>
+    <button class="butão08">7</button>
+    <button class="butão09">8</button>
+    <button class="butão10">9</button>
+    <button class="butão11">0</button>
+    <button class="butão12">.</button>
+    <button class="butão13">+</button>
+    <button class="butão14">-</button>
+    <button class="butão15">&#215;</button>
+    <button class="butão16">&#247;</button>
+    <button class="butão17">&#8730;</button>
+    <button class="butão18">&#178;</button>
+    <button class="butão19">&#9003;</button>
+
+    <form>
+        <input type="text" id="visor">
+        <input type="submit" id="visor">
+    </form>
+
+    <script>
+        igualdade = "="
+       function clicar() {
+        console.log(igualdade);
+       }
+    </script>
+     <script>
+        const tela = document.querySelector("#send");
+
+        tela.addEventListener("click", function() {
+            const visor = document.querySelector("#visor");
+            const value = name.value;
+            console.log(value);
+        }) 
+    </script>
+
+document.getElementById
+   
